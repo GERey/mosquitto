@@ -9,5 +9,4 @@ jobs:
        - checkout
        - run: sudo apt-get update -qq
        - run: sudo apt-get install -y debhelper libc-ares-dev libssl-dev libwrap0-dev python-all python3-all uthash-dev uuid-dev libuuid1 xsltproc docbook-xsl
-       - run: sudo make
-       - run: sudo make test
+       - run: make && make test
