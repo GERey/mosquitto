@@ -1,6 +1,7 @@
 version: 2
 jobs:
    build:
+     working_directory: ~/mosquitto
      docker:
        - image: gerey/mosquitto:latest
      steps:
